@@ -15,7 +15,7 @@
 後面有說要使用 --allow-root
 
 在後面加上一個
-> docker run -i -t -p 8888:8888 continuumio/anaconda3 /bin/bash -c "/opt/conda/bin/conda install jupyter -y --quiet && mkdir /opt/notebooks && /opt/conda/bin/jupyter notebook --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser --allow-root"
+> docker run -i -t -p 8888:8888 continuumio/anaconda3 /bin/bash -c  "/opt/conda/bin/conda install jupyter -y --quiet && mkdir -p /opt/notebooks && /opt/conda/bin/jupyter notebook --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser --allow-root"
 
 在後面加入 --allow-root 指令之後，即可順利運行
 
