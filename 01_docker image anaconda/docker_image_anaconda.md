@@ -28,7 +28,7 @@
 會跳出此頁面要求輸入 token
 
 此時，我們另外開一個 termial ，登入此 container 的 shell termial，
-> docker exec -it <container name> /bin/bash 
+> docker exec -it \<container name> /bin/bash 
 
 進入之後輸入 jupyter notebook list  
 取得 token
